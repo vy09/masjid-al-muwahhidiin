@@ -177,7 +177,7 @@
                     <img src="assetsfe/images/qris.jpg" alt="Image" class="img-fluid" />
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <p class="text-black-50">
                     Masjid Jami’ Al Muwahhidin menyediakan fasilitas Infaq bagi Jama’ah Masjid dengan menggunakan QR Scan Barcode, disamping fasilitas kotak infaq yang sudah tersedia terlebih dahulu.
                 </p>
