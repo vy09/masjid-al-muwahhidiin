@@ -124,8 +124,8 @@
                     <span class="flaticon-house"></span>
                     <h3 class="mb-3">Tempat Ibadah</h3>
                     <p>
-                        Layanan shalat berjamaah wajib dibuka selama waktu-waktu shalat. 
-                        Adapun pelaksanaan shalat sunat berjamaah semisal shalat tarawih, shalat Id, sholat gerhanaa dan juga shalat jenazah, 
+                        Layanan shalat berjamaah wajib dibuka selama waktu-waktu shalat.
+                        Adapun pelaksanaan shalat sunat berjamaah semisal shalat tarawih, shalat Id, sholat gerhanaa dan juga shalat jenazah,
                         dikelola dan dikoordinasikan oleh Dewan Kemakmuran Masjid.
                     </p>
                 </div>
@@ -135,8 +135,8 @@
                     <span class="flaticon-building"></span>
                     <h3 class="mb-3">ZIS</h3>
                     <p>
-                        Layanan Zakat, Infaq dan Shodaqoh yang dikelola secara profesional oleh Dewan Kemakmuran Masjid. 
-                        Selain untuk operasional dan perawatan Masjid, 
+                        Layanan Zakat, Infaq dan Shodaqoh yang dikelola secara profesional oleh Dewan Kemakmuran Masjid.
+                        Selain untuk operasional dan perawatan Masjid,
                         Dewan Kemakmuran Masjid juga untuk program Pendidikan dan Sosial.
                     </p>
                 </div>
@@ -146,8 +146,8 @@
                     <span class="flaticon-house-3"></span>
                     <h3 class="mb-3">Kajian</h3>
                     <p>
-                        Layanan kajian ilmu di Masjid meliputi kajian Tafsir malam Jum'at, Hafalan Qur'an Jum'at pagi, 
-                        Fiqih Sabtu Pagi, Fiqih Muslimah Sabtu sore, 
+                        Layanan kajian ilmu di Masjid meliputi kajian Tafsir malam Jum'at, Hafalan Qur'an Jum'at pagi,
+                        Fiqih Sabtu Pagi, Fiqih Muslimah Sabtu sore,
                         Al Muyassar dan bahasa Arab Malam Ahad dan Iqra Anak-anak setiap hari ba'da Maghrib.
                     </p>
                 </div>
@@ -157,8 +157,8 @@
                     <span class="flaticon-house-1"></span>
                     <h3 class="mb-3">Ambulance</h3>
                     <p>
-                        Masjid Jami' Al Muwahhidin menyediakan layanan ambulans jenazah. 
-                        Layanan ini mencakup pengantaran jenazah dari rumah, 
+                        Masjid Jami' Al Muwahhidin menyediakan layanan ambulans jenazah.
+                        Layanan ini mencakup pengantaran jenazah dari rumah,
                         rumah sakit, atau lokasi lain menuju masjid untuk prosesi penyelenggaraan jenazah hingga ke pemakaman.
                     </p>
                 </div>
@@ -173,22 +173,23 @@
                 <h2 class="font-weight-bold heading text-primary mb-4">Infaq Masjid Melalui QR Scan</h2>
             </div>
             <div class="col-lg-4">
+                <div class="img-about dots">
+                    <img src="assetsfe/images/qris.jpg" alt="Image" class="img-fluid" />
+                </div>
+            </div>
+            <div class="col-lg-4">
                 <p class="text-black-50">
                     Masjid Jami’ Al Muwahhidin menyediakan fasilitas Infaq bagi Jama’ah Masjid dengan menggunakan QR Scan Barcode, disamping fasilitas kotak infaq yang sudah tersedia terlebih dahulu.
                 </p>
                 <p class="text-black-50">
-                    Infaq melalui QRIS / QR Scan di Masjid Al Ikhlash adalah berinfaq dengan metode Scan Barcode 
+                    Infaq melalui QRIS / QR Scan di Masjid Al Ikhlash adalah berinfaq dengan metode Scan Barcode
                     dan pembayarannya melalui payment getawey seperti OVO, Gopay, Shopee Pay, Link Aja, Dana dan juga melalui Mobile Banking Jama’ah.
                 </p>
                 <p class="text-black-50">
                     Semakin mudah berinfaq dan beribadah diMasjid Jami’ Al Muwahhidiindi Sukamaju, Kec. Cilodong, Kota Depok, Jawa Barat,.
                 </p>
             </div>
-            <div class="col-lg-4">
-                <div class="img-about dots">
-                    <img src="assetsfe/images/qris.jpg" alt="Image" class="img-fluid" />
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
