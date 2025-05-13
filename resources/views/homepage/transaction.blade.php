@@ -130,7 +130,7 @@
                 <h2 class="font-weight-bold text-primary heading">
                     Daftar Laporan Tahun ini
                 </h2>
-                <p class="text-sm mb-2">Ini adalah rincian tentang laporan keuangan masjid dalam sebulan yang telah dilakukan.</p>
+                <p class="text-sm mb-2">Ini adalah rincian tentang laporan keuangan masjid dalam setahun yang telah dilakukan.</p>
             </div>
         </div>
         <div class="row">

@@ -53,7 +53,7 @@
 
             <div class="col-lg-6">
                 <div class="img-about dots">
-                    <img src="assetsfe/images/irma.jpg" alt="Image" class="img-fluid" />
+                    <img src="assetsfe/images/irma_img.jpg" alt="Image" class="img-fluid" />
                 </div>
             </div>
             <div class="d-flex feature-h">
