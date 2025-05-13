@@ -31,7 +31,7 @@
                 <h2 class="font-weight-bold text-primary heading">
                     Daftar Kegiatan Jumat
                 </h2>
-                <p class="text-sm mb-2">Ini adalah rincian tentang laporan keuangan masjid dalam sebulan yang telah dilakukan.</p>
+                <p class="text-sm mb-2">Ini adalah rincian tentang laporan Kegiatan Sholat Jumat Masjid dalam sebulan yang telah dilakukan.</p>
             </div>
         </div>
         <div class="row">
