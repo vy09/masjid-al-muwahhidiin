@@ -24,7 +24,6 @@
                         </ul>
                     </li>
                     <li><a class="{{ Route::is('sign-in') ? 'active-custom' : '' }} text-dark text-decoration-none" href="{{ route('sign-in') }} ">Login</a></li>
-                    <li><a class="text-dark text-decoration-none" href="contact.html">Contact Us</a></li>
                 </ul>
 
                 <a

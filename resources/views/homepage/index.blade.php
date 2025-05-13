@@ -74,7 +74,7 @@
         font-weight: bold;
     }
 </style>
-<section class="features-1">
+<section class="features-1 bg-white">
     <div class="container">
         <div class="row">
             <div class="container mx-auto p-8">
@@ -119,7 +119,7 @@
 <section class="features-1">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-6 col-lg-3 " data-aos="fade-up" data-aos-delay="300">
                 <div class="box-feature">
                     <span class="flaticon-house"></span>
                     <h3 class="mb-3">Tempat Ibadah</h3>
@@ -174,7 +174,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="img-about dots">
-                    <img src="assetsfe/images/qris.jpg" alt="Image" class="img-fluid" />
+                    <img src="assetsfe/images/qris_masjid.jpg" alt="Image" class="img-fluid" />
                 </div>
             </div>
             <div class="col-lg-6">

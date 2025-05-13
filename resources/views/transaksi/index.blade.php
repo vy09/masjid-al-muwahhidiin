@@ -446,7 +446,7 @@
                                         </td>
                                         <td class="text-sm text-dark">
                                             <form action="{{ route('laporan.bulanan.download') }}" method="GET">
-                                                <input type="hidden" name="tahun" value="{{ $tahun }}">
+                                                <input type="hidden" name="bulan" value="{{ $item['bulan'] }}">
                                                 <button type="submit" class="btn btn-outline-dark btn-sm">Download</button>
                                             </form>
                                         </td>

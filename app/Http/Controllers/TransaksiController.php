@@ -220,31 +220,48 @@ class TransaksiController extends Controller
     }
     public function downloadPdf(Request $request)
     {
-        $tahun = $request->input('tahun', date('Y'));
+        // Ambil bulan dari input, default ke bulan ini jika tidak ada input
+        $bulanInput = $request->input('bulan', date('F'));
 
-        $data = [];
+        // Daftar nama bulan dalam bahasa Indonesia
+        $bulanNama = [
+            'januari' => 1,
+            'februari' => 2,
+            'maret' => 3,
+            'april' => 4,
+            'mei' => 5,
+            'juni' => 6,
+            'juli' => 7,
+            'agustus' => 8,
+            'september' => 9,
+            'oktober' => 10,
+            'november' => 11,
+            'desember' => 12,
+        ];
 
-        foreach (range(1, 12) as $bulan) {
-            $pemasukan = Transaksi::whereYear('tanggal_transaksi', $tahun)
-                ->whereMonth('tanggal_transaksi', $bulan)
-                ->where('tipe_transaksi', 'pemasukan')
-                ->sum('nominal') ?? 0;
+        // Konversi nama bulan ke angka
+        $bulan = $bulanNama[strtolower($bulanInput)] ?? date('n');
+        $tahun = date('Y');
 
-            $pengeluaran = Transaksi::whereYear('tanggal_transaksi', $tahun)
-                ->whereMonth('tanggal_transaksi', $bulan)
-                ->where('tipe_transaksi', 'pengeluaran')
-                ->sum('nominal') ?? 0;
+        // Ambil semua data transaksi untuk bulan yang dipilih
+        $transaksis = Transaksi::whereYear('tanggal_transaksi', $tahun)
+            ->whereMonth('tanggal_transaksi', $bulan)
+            ->get();
 
-            $data[] = [
-                'bulan' => \Carbon\Carbon::create()->month($bulan)->locale('id')->translatedFormat('F'),
-                'pemasukan' => $pemasukan,
-                'pengeluaran' => $pengeluaran,
-            ];
-        }
-        $pdf = Pdf::loadView('laporan.bulanan_pdf', compact('data', 'tahun'));
-        $pdf = PDF::loadView('laporan.bulanan_pdf', compact('data', 'tahun'));
-        return $pdf->download('laporan-bulanan-' . $tahun . '.pdf');
+        // Format data untuk PDF
+        $data = [
+            'bulan' => ucfirst(array_search($bulan, $bulanNama)),  // Menampilkan nama bulan
+            'tahun' => $tahun,
+            'transaksis' => $transaksis,
+        ];
+        // dd($data);
+        // Buat PDF
+        $pdf = Pdf::loadView('transaksi.laporan', $data);
+
+        return $pdf->download('laporan-bulanan-' . $bulanInput . '-' . $tahun . '.pdf');
     }
+
+
 
     public function chartData(Request $request)
     {
