@@ -34,7 +34,7 @@
             </div>
             <div class="col-lg-6">
                 <p class="text-black-50">
-                    Ikatan Remaja Masjid (IRMA) Al-Muwahhidiin adalah komunitas pemuda yang aktif di lingkungan Masjid Jami’ Al-Muwahhidiin, Sukamaju, Kota Depok, Jawa Barat.
+                    Ikatan Remaja Masjid (IRMA) Al-Muwahhidiin merupakan komunitas pemuda yang aktif di lingkungan Masjid Jami’ Al-Muwahhidiin, Sukamaju, Kota Depok, Jawa Barat.
                     Dengan semangat #HadirMemakmurkanMasjid, IRMA Al-Muwahhidiin berkomitmen untuk menjadikan masjid sebagai pusat kegiatan positif bagi generasi muda.
                     Kami rutin menyelenggarakan berbagai kegiatan keagamaan dan sosial,
                     seperti Tabligh Akbar dalam rangka memperingati Isra Mi'raj Nabi Muhammad SAW
