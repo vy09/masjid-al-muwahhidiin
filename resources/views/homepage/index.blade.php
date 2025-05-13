@@ -182,7 +182,7 @@
                     Masjid Jami’ Al Muwahhidin menyediakan fasilitas Infaq bagi Jama’ah Masjid dengan menggunakan QR Scan Barcode, disamping fasilitas kotak infaq yang sudah tersedia terlebih dahulu.
                 </p>
                 <p class="text-black-50">
-                    Infaq melalui QRIS / QR Scan di Masjid Al Ikhlash adalah berinfaq dengan metode Scan Barcode
+                    Infaq melalui QRIS / QR Scan di Masjid Al-Muwahhidiin adalah berinfaq dengan metode Scan Barcode
                     dan pembayarannya melalui payment getawey seperti OVO, Gopay, Shopee Pay, Link Aja, Dana dan juga melalui Mobile Banking Jama’ah.
                 </p>
                 <p class="text-black-50">
