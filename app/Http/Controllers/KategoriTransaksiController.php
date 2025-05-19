@@ -7,56 +7,58 @@ use App\Models\KategoriTransaksi;
 
 class KategoriTransaksiController extends Controller
 {
-    //buatkan kategori transaksi
-    public function create(Request $request)
-    {
-        $request->validate([
-            'id' => 'required|integer',
-            'kategori_transaksi' => 'required|string|max:255',
-        ], [
-            'kategori_transaksi.required' => 'Kategori Transaksi wajib diisi',
-            'kategori_transaksi.string' => 'Kategori Transaksi harus berupa string',
-            'kategori_transaksi.max' => 'Kategori Transaksi tidak boleh lebih dari 255 karakter',
-        ]);
-        $kategoriTransaksi = new KategoriTransaksi();
-        $kategoriTransaksi->kategori_transaksi = $request->kategori_transaksi;
-        $kategoriTransaksi->save();
-        return redirect()->route('kategori_transaksi.index')->with('success', 'Kategori Transaksi berhasil ditambahkan.');
-    }
     public function index()
     {
-        $kategoriTransaksi = KategoriTransaksi::all();
-        return view('kategori_transaksi.index', compact('kategoriTransaksi'));
+        $kategoriTransaksi = KategoriTransaksi::orderBy('created_at', 'desc')->get();
+        return view('transaksi.kategori_transaksi.index', compact('kategoriTransaksi'));
     }
 
-    public function show($id)
+    public function create()
     {
-        $kategoriTransaksi = KategoriTransaksi::findOrFail($id);
-        return view('kategori_transaksi.show', compact('kategoriTransaksi'));
+        return view('transaksi.kategori_transaksi.create');
     }
+    public function store(Request $request)
+    {
+        $request->validate([
+            'nama_kategori' => 'required|string|max:255',
+        ], [
+            'nama_kategori.required' => 'Nama Kategori wajib diisi',
+            'nama_kategori.string' => 'Nama Kategori harus berupa string',
+            'nama_kategori.max' => 'Nama Kategori tidak boleh lebih dari 255 karakter',
+        ]);
+
+        KategoriTransaksi::create([
+            'nama_kategori' => ucwords($request->nama_kategori),
+        ]);
+
+        return redirect()->route('kategoriTransaksi.index')->with('success', 'Kategori Transaksi berhasil ditambahkan.');
+    }
+
     public function edit($id)
     {
         $kategoriTransaksi = KategoriTransaksi::findOrFail($id);
-        return view('kategori_transaksi.edit', compact('kategoriTransaksi'));
+        return view('transaksi.kategori_transaksi.edit', compact('kategoriTransaksi'));
     }
     public function update(Request $request, $id)
     {
         $request->validate([
-            'kategori_transaksi' => 'required|string|max:255',
+            'nama_kategori' => 'required|string|max:255',
         ], [
-            'kategori_transaksi.required' => 'Kategori Transaksi wajib diisi',
-            'kategori_transaksi.string' => 'Kategori Transaksi harus berupa string',
-            'kategori_transaksi.max' => 'Kategori Transaksi tidak boleh lebih dari 255 karakter',
+            'nama_kategori.required' => 'Nama Kategori wajib diisi',
+            'nama_kategori.string' => 'Nama Kategori harus berupa string',
+            'nama_kategori.max' => 'Nama Kategori tidak boleh lebih dari 255 karakter',
         ]);
         $kategoriTransaksi = KategoriTransaksi::findOrFail($id);
-        $kategoriTransaksi->kategori_transaksi = $request->kategori_transaksi;
+        $kategoriTransaksi->nama_kategori = ucwords($request->nama_kategori);
         $kategoriTransaksi->save();
-        return redirect()->route('kategori_transaksi.index')->with('success', 'Kategori Transaksi berhasil diupdate.');
+
+        return redirect()->route('kategoriTransaksi.index')->with('success', 'Kategori Transaksi berhasil diupdate.');
     }
     public function destroy($id)
     {
         $kategoriTransaksi = KategoriTransaksi::findOrFail($id);
         $kategoriTransaksi->delete();
-        return redirect()->route('kategori_transaksi.index')->with('success', 'Kategori Transaksi berhasil dihapus.');
+
+        return redirect()->route('kategoriTransaksi.index')->with('success', 'Kategori Transaksi berhasil dihapus.');
     }
 }

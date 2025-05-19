@@ -13,6 +13,7 @@ use App\Http\Controllers\KegiatanMasjidController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\DasbordController;
 use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\KategoriTransaksiController;
 use App\Http\Controllers\KegiatanJumatController;
 use Illuminate\Support\Facades\Http;
 
@@ -136,6 +137,15 @@ Route::get('/transaksi/{id}', [TransaksiController::class, 'show'])->name('trans
 Route::get('/transaksi/{id}/edit', [TransaksiController::class, 'edit'])->name('transaksi.edit')->middleware('auth');
 Route::put('/transaksi/{id}', [TransaksiController::class, 'update'])->name('transaksi.update')->middleware('auth');
 Route::delete('/transaksi/{id}', [TransaksiController::class, 'destroy'])->name('transaksi.destroy')->middleware('auth');
+
+// Kategori Transaksi
+Route::get('/kategori_transaksi', [KategoriTransaksiController::class, 'index'])->name('kategoriTransaksi.index')->middleware('auth');
+Route::get('/kategori_transaksi/create', [KategoriTransaksiController::class, 'create'])->name('kategoriTransaksi.create')->middleware('auth');
+Route::post('/kategori_transaksi', [KategoriTransaksiController::class, 'store'])->name('kategoriTransaksi.store')->middleware('auth');
+Route::get('/kategori_transaksi/{id}/edit', [KategoriTransaksiController::class, 'edit'])->name('kategoriTransaksi.edit')->middleware('auth');
+Route::put('/kategori_transaksi/{id}', [KategoriTransaksiController::class, 'update'])->name('kategoriTransaksi.update')->middleware('auth');
+Route::delete('/kategori_transaksi/{id}', [KategoriTransaksiController::class, 'destroy'])->name('kategoriTransaksi.destroy')->middleware('auth');
+
 //buttondownloadlaporan
 Route::get('/laporan/bulanan/download', [TransaksiController::class, 'downloadPdf'])->name('laporan.bulanan.download');
 // Kegiatan Masjid

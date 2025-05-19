@@ -20,7 +20,6 @@ return new class extends Migration
             $table->time('waktu_mulai')->nullable();
             $table->time('waktu_selesai')->nullable(); // added new column for end time
             $table->string('tempat_kegiatan')->nullable();
-            // $table->enum('tipe_kegiatan', ['jumatan', 'umum', 'pengajian', 'kegiatan sosial', 'kegiatan lainnya']);
             $table->string('gambar')->nullable(); // simpan nama file/folder di storage
             $table->timestamps();
         });
