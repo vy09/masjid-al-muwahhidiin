@@ -119,7 +119,7 @@
 <section class="features-1">
     <div class="container">
         <div class="row">
-            <div class="col-6 col-lg-3 " data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-6 col-lg-3  col-sm-12" data-aos="fade-up" data-aos-delay="300">
                 <div class="box-feature">
                     <span class="flaticon-house"></span>
                     <h3 class="mb-3">Tempat Ibadah</h3>
@@ -130,7 +130,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-md-6 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-delay="500">
                 <div class="box-feature">
                     <span class="flaticon-building"></span>
                     <h3 class="mb-3">ZIS</h3>
@@ -141,7 +141,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-md-6 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-delay="400">
                 <div class="box-feature">
                     <span class="flaticon-house-3"></span>
                     <h3 class="mb-3">Kajian</h3>
@@ -152,7 +152,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-md-6 col-lg-3 col-sm-12" data-aos="fade-up" data-aos-delay="600">
                 <div class="box-feature">
                     <span class="flaticon-house-1"></span>
                     <h3 class="mb-3">Ambulance</h3>
