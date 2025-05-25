@@ -15,7 +15,7 @@
 
                     <a href="login" onclick="event.preventDefault();
                 this.closest('form').submit();">
-                        <button class="btn btn-sm  btn-white  mb-0 me-1" type="submit">Log out</button>
+                        <button class="btn btn-sm  btn-primary  mb-0 me-1" type="submit">Log out</button>
                     </a>
                 </form>
             </div>
