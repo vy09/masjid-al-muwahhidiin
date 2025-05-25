@@ -23,7 +23,7 @@
                             <li><a class=" {{ Route::is('eventmasjid') ? 'active-custom' : '' }} text-dark text-decoration-none" href="{{ route('eventmasjid') }} ">Kegiatan Masjid</a></li>
                         </ul>
                     </li>
-                    <li><a class="{{ Route::is('sign-in') ? 'active-custom' : '' }} text-dark text-decoration-none" href="{{ route('sign-in') }} ">Login</a></li>
+                    <li><a class="{{ Route::is('sign-in') ? 'active-custom' : '' }} text-decoration-none btn btn-success btn-sm rounded-5" href="{{ route('sign-in') }} ">Login</a></li>
                 </ul>
 
                 <a
