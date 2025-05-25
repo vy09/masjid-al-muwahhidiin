@@ -82,8 +82,7 @@
                     <div class="feature-text">
                         <h3 class="heading">Hubungi</h3>
                         <p class="text-black-50">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Nostrum iste.
+                            +62 896-3472-9296
                         </p>
                     </div>
                     <span class="wrap-icon me-3 m-2">

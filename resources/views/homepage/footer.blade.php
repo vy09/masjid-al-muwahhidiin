@@ -6,11 +6,7 @@
                     <h3>Contact</h3>
                     <address>Masjid Jami’ Al Muwahhidin, Sukamaju, Kec. Cilodong, Kota Depok, Jawa Barat</address>
                     <ul class="list-unstyled links">
-                        <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                        <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                        <li>
-                            <a href="mailto:info@mydomain.com">info@mydomain.com</a>
-                        </li>
+                        <li><a href="https://wa.me/6289634729296">+62 896-3472-9296</a></li>
                     </ul>
                 </div>
                 <!-- /.widget -->
@@ -19,11 +15,6 @@
             <div class="col-lg-4">
                 <div class="widget">
                     <h3>Links</h3>
-                    <ul class="list-unstyled links">
-                        <li><a href="#">Our Vision</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
 
                     <ul class="list-unstyled social">
                         <li>
