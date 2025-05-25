@@ -94,7 +94,7 @@
                 <p><strong>Tempat:</strong> {{ $kegiatan->tempat_kegiatan ?? 'Belum Ditentukan' }}</p>
                 <p><strong>Deskripsi:</strong> {{ $kegiatan->deskripsi ?? 'Belum Ada Deskripsi' }}</p>
                 @if($kegiatan->gambar)
-                <img src="{{ asset('storage/' . $kegiatan->gambar) }}" alt="{{ $kegiatan->nama_kegiatan }}" class="w-100" style="aspect-ratio: 3 / 4; max-width: 300px; object-fit: cover; border-radius: 1rem; display: block;">
+                <img src="{{ asset('storage/' . $kegiatan->gambar) }}" alt="{{ $kegiatan->nama_kegiatan }}" class="w-100" style="object-fit: cover; border-radius: 1rem; display: block;">
                 @endif
             </div>
             <div class="modal-footer">
