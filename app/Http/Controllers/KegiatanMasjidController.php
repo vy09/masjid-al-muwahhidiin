@@ -33,7 +33,7 @@ class KegiatanMasjidController extends Controller
             'waktu_mulai' => 'required|date_format:H:i',
             'waktu_selesai' => 'required|date_format:H:i|after:waktu_mulai',
             'tempat_kegiatan' => 'required|string|max:255',
-            'deskripsi' => 'required|string|max:255',
+            'deskripsi' => 'required|string|max:99999',
             'gambar' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
@@ -71,7 +71,7 @@ class KegiatanMasjidController extends Controller
             'tanggal_kegiatan' => 'required|date',
             'waktu_mulai' => 'required|date_format:H:i',
             'waktu_selesai' => 'required|date_format:H:i|after:waktu_mulai',
-            'tempat_kegiatan' => 'required|string|max:255',
+            'tempat_kegiatan' => 'required|string|max:99999',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
