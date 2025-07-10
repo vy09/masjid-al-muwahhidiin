@@ -37,7 +37,6 @@
                             @error('nama_kategori')
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
-
                     </div>
 
                     <button type="submit"

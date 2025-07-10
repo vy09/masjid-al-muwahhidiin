@@ -88,7 +88,6 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p><strong>Pengisi:</strong> {{ $kegiatan->nama_pengisi ?? 'Belum Ditentukan' }}</p>
                 <p><strong>Tanggal:</strong> {{ $kegiatan->tanggal_kegiatan }}</p>
                 <p><strong>Waktu:</strong> {{ $kegiatan->waktu_mulai ?? 'Belum Ditentukan' }} - {{ $kegiatan->waktu_selesai ?? 'Belum Ditentukan' }}</p>
                 <p><strong>Tempat:</strong> {{ $kegiatan->tempat_kegiatan ?? 'Belum Ditentukan' }}</p>
