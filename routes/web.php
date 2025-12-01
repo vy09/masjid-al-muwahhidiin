@@ -109,7 +109,7 @@ Route::post('/reset-password', [ResetPasswordController::class, 'store'])
     ->middleware('guest');
 
 Route::get('/laravel-examples/user-profile', [ProfileController::class, 'index'])->name('users.profile')->middleware('auth');
-Route::put('/laravel-examples/user-profile/update', [ProfileController::class, 'update'])->name('users.update')->middleware('auth');
+Route::put('/laravel-examples/user-profile/update', [ProfileController::class, 'update'])->name('profile.update')->middleware('auth');
 
 // User Management
 Route::get('/users', [UserController::class, 'index'])->name('users.index')->middleware('auth');
